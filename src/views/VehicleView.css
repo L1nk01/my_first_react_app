@@ -1,0 +1,11 @@
+.VehicleView {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20vh;
+}
+
+.VehicleView > button {
+  width: 200px;
+}
