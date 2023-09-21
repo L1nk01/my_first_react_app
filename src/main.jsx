@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { createHashRouter, RouterProvider } from "react-router-dom"
 import vehicles from "./data/vehicles.js"
 import VehicleView from './views/VehicleView.jsx'
 
@@ -20,7 +20,7 @@ vehicles.forEach((vehicle) => {
   })
 })
 
-const router = createBrowserRouter(routes)
+const router = createHashRouter(routes)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
